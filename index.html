@@ -1,1 +1,243 @@
-Welcome to CI-CD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Paws | Premium Cat Care</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      background: linear-gradient(135deg, #111, #2b2114);
+    }
+
+    .hero-text {
+      max-width: 520px;
+    }
+
+    .hero-text h1 {
+      font-size: 62px;
+      line-height: 1.1;
+      color: #fff;
+    }
+
+    .hero-text span {
+      color: #d4af37;
+    }
+
+    .hero-text p {
+      margin: 25px 0;
+      font-size: 18px;
+      color: #ccc;
+      line-height: 1.7;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #d4af37;
+      color: #111;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: translateY(-4px);
+    }
+
+    .cat-card {
+      width: 360px;
+      height: 460px;
+      border-radius: 35px;
+      background: linear-gradient(145deg, #d4af37, #fff3b0);
+      padding: 15px;
+      box-shadow: 0 20px 60px rgba(212, 175, 55, 0.35);
+    }
+
+    .cat-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .services {
+      padding: 80px 8%;
+      background: #151515;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 42px;
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .services p {
+      color: #aaa;
+      margin-bottom: 45px;
+    }
+
+    .service-boxes {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 280px;
+      padding: 35px 25px;
+      background: #202020;
+      border-radius: 25px;
+      transition: 0.3s;
+      border: 1px solid #333;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      border-color: #d4af37;
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .box h3 {
+      color: #fff;
+      margin: 15px 0;
+      font-size: 24px;
+    }
+
+    .box p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0b0b0b;
+      color: #888;
+    }
+
+    @media(max-width: 850px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+      }
+
+      .cat-card {
+        margin-top: 40px;
+        width: 300px;
+        height: 390px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🐾 Luxe Paws</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Care</a>
+      <a href="#">Grooming</a>
+      <a href="#">Shop</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Luxury Care for Your <span>Royal Cat</span></h1>
+      <p>
+        Premium grooming, healthy meals, cozy accessories, and elegant care
+        for cats who clearly think they own the house. Because honestly… they do.
+      </p>
+      <button class="btn">Explore Services</button>
+    </div>
+
+    <div class="cat-card">
+      <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Premium Cat">
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Premium Services</h2>
+    <p>Everything your cat needs to live like a tiny furry billionaire.</p>
+
+    <div class="service-boxes">
+      <div class="box">
+        <h3>🐱 Luxury Grooming</h3>
+        <p>Soft fur care, nail trimming, spa bath, and stylish finishing for your elegant cat.</p>
+      </div>
+
+      <div class="box">
+        <h3>🍽️ Premium Meals</h3>
+        <p>Healthy and tasty meals prepared for cats with royal-level attitude and zero patience.</p>
+      </div>
+
+      <div class="box">
+        <h3>🏠 Cozy Accessories</h3>
+        <p>Luxury beds, collars, toys, and home essentials for maximum cat comfort.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Luxe Paws. Made for cats who judge humans professionally.
+  </footer>
+
+</body>
+</html>
